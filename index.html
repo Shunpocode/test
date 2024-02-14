@@ -20,7 +20,16 @@
       position: relative;
       width:52px;
       height:80px;
-      margin-top: 10px;    
+      margin-top: 10px;
+      animation: 300ms infinite both heart;
+    }
+    @keyframes heart {
+        from{
+            scale: 1;
+        }
+        to{
+            scale: 1.1;
+        }
     }
     .heart::after, .heart::before{
       content: "";
@@ -33,12 +42,12 @@
     }
     .heart::before{
       left: 50px;
-      transform: rotate(-45deg);
+      transform: rotate(-45px);
       transform-origin: 0 100%;
     }
     .heart::after{
       left: 0px;
-      transform: rotate(45deg);
+      transform: rotate(45px);
       transform-origin: 100% 100%;
     }
     
@@ -50,6 +59,6 @@
         З днем святого валентина
     </h2>
 
-    <p style="position: absolute; top: 35px;">Ти класна і розумна дівчина та в тебе все вийде</p>
+    <p style="position: absolute; top: 60px;">Ти класна і розумна дівчина та в тебе все вийде</p>
 </body>
 </html>
