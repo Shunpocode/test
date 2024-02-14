@@ -16,13 +16,13 @@
       padding:20px;
       box-sizing: border-box;
     }
-    #heart{
+    .heart{
       position: relative;
-      width:100px;
-      height:90px;
+      width:52px;
+      height:80px;
       margin-top: 10px;    
     }
-    #heart::after, #heart::before{
+    .heart::after, .heart::before{
       content: "";
       position: absolute;
       top: 0;
@@ -31,19 +31,25 @@
       border-radius:50px 50px 0 0;
       background: white;
     }
-    #heart::before{
+    .heart::before{
       left: 50px;
-      transform: rotate(-45deg);
+      transform: rotate(-45px);
       transform-origin: 0 100%;
     }
-    #heart::after{
+    .heart::after{
       left: 0px;
-      transform: rotate(45deg);
+      transform: rotate(45px);
       transform-origin: 100% 100%;
     }
     
   </style>
 <body>
-    <div id="heart"></div>
+    <div class="heart">
+    </div>
+    <h3>
+        З днем святого валентина
+    </h3>
+
+    <p>Ти класна і розумна дівчина та в тебе все вийде</p>
 </body>
 </html>
